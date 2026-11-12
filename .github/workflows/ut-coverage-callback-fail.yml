@@ -28,7 +28,7 @@ jobs:
           coverage json
 
       - name: Upload UT coverage
-        uses: openlibing-test/upload-ut-action@v1.0.2
+        uses: ./vendor/upload-ut-action
         env:
           OPENLIBING_APIG_BETA_BASE: https://invalid-callback.example.invalid
         with:
