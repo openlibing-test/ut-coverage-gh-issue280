@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Upload UT coverage
-        uses: openlibing-test/upload-ut-action@v1.0.2
+        uses: ./vendor/upload-ut-action
         with:
           report_path: ./not-exist-dir
           env_type: beta
